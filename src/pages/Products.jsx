@@ -23,7 +23,7 @@ const Products = () => {
         <div className="text-center fs-1 fw.bold mb-5">Products</div>
         <div className="container text-center">
             <div className="row align-items-start">
-            {prodotti.map((prodotto) => {
+            {prodottiBudget.map((prodotto) => {
                 return(
                 <div className="col-6 border mb-5" key={prodotto.id}> 
                     <Link className="text-decoration-none text-black" to={`/products/${prodotto.id}`}>
