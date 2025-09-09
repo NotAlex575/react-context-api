@@ -12,6 +12,12 @@ const Products = () => {
         .then(data => setProdotti(data));
     }, []);
 
+    const prodottiBudget = budgetMode 
+    //if
+    ? prodotti.filter(budget => budget.price <= 30) 
+    //else
+    : prodotti
+
     return (
     <>
         <div className="text-center fs-1 fw.bold mb-5">Products</div>
