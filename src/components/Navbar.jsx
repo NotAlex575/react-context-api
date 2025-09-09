@@ -26,7 +26,7 @@ const Navbar = () => {
                 }>Products</NavLink>
             </li>
           </ul>
-          <button className="btn" onClick={() => setBudgetMode(!budgetMode)}>
+          <button className="btn btn-info" onClick={() => setBudgetMode(!budgetMode)}>
             {budgetMode ? "disattiva budget mode" : "attiva budget mode"}
           </button>
         </nav>

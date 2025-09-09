@@ -4,7 +4,7 @@ const BudgetContext = createContext();
 
 const BudgetProvider = ({ children }) => {
     const [budgetMode, setBudgetMode] = useState(false); 
-
+    console.log(budgetMode);
     return(
         <BudgetContext.Provider value={{budgetMode, setBudgetMode}}>
             {children}
