@@ -1,8 +1,10 @@
-import { useEffect, useState } from "react";
+import { useContext, useEffect, useState } from "react";
 import { Link } from "react-router-dom";
+import { BudgetContext } from "../context/BudgetContext";
 
 const Products = () => {
     const [prodotti, setProdotti] = useState([]);
+    const {budgetMode} = useContext(BudgetContext);
 
     useEffect(() =>{
         fetch("https://fakestoreapi.com/products")
